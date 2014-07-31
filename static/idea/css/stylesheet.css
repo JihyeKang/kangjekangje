@@ -1,0 +1,49 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,500);
+
+body {
+	font-family: "Nanum Gothic","Helvetica Neue","Roboto", Helvetica, Arial, sans-serif;
+
+	font-size:large;
+}
+
+.navbar div ul li {
+	font-size: 20px;
+	font-color:blue;
+	font-style: bold;
+}
+.btn{
+	background: #969292;
+}
+
+.row{
+	margin:auto;
+	margin-top: 80px;
+}
+.row h3{
+	font-weight:bold;
+}
+
+ .carousel-inner>.item>img {
+	height: 800px;
+	width: 1000px;
+	max-width: 1000px;
+
+}
+.carousel {
+	margin: auto;
+	margin-top: 70px;
+	height: 800px;
+	width: 1000px;
+	max-width: 1000px;
+
+}
+
+#feedback{
+	margin:auto;
+}
+
+.hi{
+	height:300px;
+	width: 800px;
+}

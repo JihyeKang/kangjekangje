@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<meta name="description" content="Draggable Dual-View Slideshow: A Slideshow with two views and content area" />
+	<meta name="keywords" content="draggable, slideshow, fullscreen, carousel, views, zoomed, 3d transform, perspective, dragdealer" />
+	<meta name="author" content="Codrops" />
+	<!--scroll-->
+
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:900,400|Lato:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" type="text/css" href="static/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="static/css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="static/css/dragdealer.css" />
+	<link rel="stylesheet" type="text/css" href="static/css/component.css" />
+		<link rel="stylesheet" type="text/css" href="static/main/css/stylesheet.css"/>
+
+	<script src="static/js/modernizr.custom.js"></script>
+	<title>JIHYE KANG</title>
+	<link href='http://fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
+	<script src="static/common/js/jquery-1.11.1.min.js"></script>
+	<script src="static/common/js/jquery-ui.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<header id="header" class="codrops-header">
+			<h1></h1>
+			<span class="message">This mobile version does not have the slideshow switch</span>
+			<button class="slider-switch">Switch view</button>
+		</header>
+		<div id="overlay" class="overlay" id="kor">
+			<div class="info">
+				<h2>둘러보시는법을 알려드려요</h2>
+				<span class="info-drag">드래그</span>
+				<span class="info-keys">화살표</span>
+				<span class="info-switch">화면 전환</span>
+				<button>Got it!</button>	
+			</div>
+		</div>
+		<div id="slideshow" class="dragslider">
+			<section class="img-dragger img-dragger-large dragdealer">
+				<div class="handle">
+					<div class="slide" data-content="content-1">
+						<div class="img-wrap"><img src="https://scontent-a-sjc.xx.fbcdn.net/hphotos-prn2/v/t1.0-9/945470_590507770967858_1073476324_n.jpg?oh=139dd8385bbb6e21c1b16b357c8af4c0&oe=543202E8" alt="img1"/></div>
+						<h2>Kang Ji Hye <span>What though life conspire to cheat you, do not sorrow or complain.</span></h2>
+						<button class="content-switch">Read more</button>
+					</div>
+					<div class="slide" data-content="content-2">
+						<div class="img-wrap"><img src="img/2.jpg" alt="img2"/></div>
+						<h2>Round Table <span>King Arthur's creative team techniques</span></h2>
+						<button class="content-switch">Read more</button>
+					</div>
+					<div class="slide" data-content="content-3">
+						<div class="img-wrap"><img src="img/3.jpg" alt="img3"/></div>
+						<h2>Taking Sneezes <span>Nothing is out there&mdash;let's try again</span></h2>
+						<button class="content-switch">Read more</button>
+					</div>
+					
+				</div>
+			</section><!-- /img-dragger-->
+			<!-- Content section -->
+			<section class="pages">
+				<div class="content" data-content="content-1">
+					<div id="head" class="menu_1">
+						<h2> About </h2>
+					</div>
+					<div class="intro">
+						<div class="full-box" id="kor">
+							<p>1992.06.26 충남 보령에서 태어남<br>상아유치원 졸업<br>꿈 : 대통령, 발레리나</p>
+						</div>
+						<div class="full-box" id="kor">
+							<p>2004 대천초등학교 졸업<br>꿈 : 과학자, 국악인</p>
+						</div>
+						<div class="full-box" id="kor">
+							<p>부모님의 낚시&등산 취미 때문에 속초로 이사 <br>2007 설악여자중학교 졸업<br>아이돌을 매우 좋아했음<br>꿈 : 초콜릿가게 사장</p>
+						</div>
+
+						<div class="full-box" id="kor">
+							<p>2011 속초여자고등학교 졸업<br>꿈 : 문화재청장/사업가</p>
+						</div>
+
+						<div class="full-box" id="kor">
+							<p>2011 연세대학교 입학<br>경영학 전공<br>꿈 : <br> </p>
+						</div>
+					</div>
+					<table style="color: #fbffde" class="table">
+						<thead> 
+							<tr>
+								<th colspan="3"><img src="https://scontent-a-sjc.xx.fbcdn.net/hphotos-prn2/v/t1.0-9/945470_590507770967858_1073476324_n.jpg?oh=139dd8385bbb6e21c1b16b357c8af4c0&oe=543202E8" id="mainpt"/></th>
+							</tr>
+							<tr>
+								<th><div id="tb">Jihye Kang</div></th>
+								<th><a href="https://www.facebook.com/jh.dan1107"><div id="pt1"></div></a></th>
+								<th><div id="pt2"></div></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><div id="pt3"></div></td>
+								<td><div id="pt4"></div></td>
+								<td><div id="pt5"></div></td>
+							</tr>
+							<tr>
+								<td><div id="pt6"></div></td>
+								<td><div id="pt7"></div></td>
+								<td><a href="/idea.html"><div id="tb">Idea Page</div></a></td>
+							</tr>
+							<div class="fb-like" data-href="https://kangjekangje.appspot.com" data-width="1000" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>
+						</tbody>
+					</table>
+
+					<iframe width="420" height="315" src="//www.youtube.com/embed/GmxIW8vMtnU" frameborder="0" allowfullscreen></iframe>
+					<div id="fb-root"></div>
+					<script>(function(d, s, id) {
+						var js, fjs = d.getElementsByTagName(s)[0];
+						if (d.getElementById(id)) return;
+						js = d.createElement(s); js.id = id;
+						js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&appId=1504609393087103&version=v2.0";
+						fjs.parentNode.insertBefore(js, fjs);
+					}(document, 'script', 'facebook-jssdk'));</script>
+
+				</p>
+				<section class="example" id="ex2">
+					<header>
+						<h1>Contact </h1>
+					</header>
+
+				</section>
+
+			</div>
+
+			<div class="content" data-content="content-2">
+				<h2>Round Table <span>King Arthur's creative team techniques</span></h2>
+				<p>
+				</div>
+				<div class="content" data-content="content-3">
+					<h2>Taking Sneezes <span>Nothing is out there&mdash;let's try again</span></h2>
+
+				</div>
+
+			</section>
+		</div>
+	</div><!-- /container --> 
+	<script src="static/js/dragdealer.js"></script>
+	<script src="static/js/classie.js"></script>
+	<script src="static/js/dragslideshow.js"></script>
+	<script>
+	(function() {
+
+		var overlay = document.getElementById( 'overlay' ),
+		overlayClose = overlay.querySelector( 'button' ),
+		header = document.getElementById( 'header' )
+		switchBtnn = header.querySelector( 'button.slider-switch' ),
+		toggleBtnn = function() {
+			if( slideshow.isFullscreen ) {
+				classie.add( switchBtnn, 'view-maxi' );
+			}
+			else {
+				classie.remove( switchBtnn, 'view-maxi' );
+			}
+		},
+		toggleCtrls = function() {
+			if( !slideshow.isContent ) {
+				classie.add( header, 'hide' );
+			}
+		},
+		toggleCompleteCtrls = function() {
+			if( !slideshow.isContent ) {
+				classie.remove( header, 'hide' );
+			}
+		},
+		slideshow = new DragSlideshow( document.getElementById( 'slideshow' ), { 
+						// toggle between fullscreen and minimized slideshow
+						onToggle : toggleBtnn,
+						// toggle the main image and the content view
+						onToggleContent : toggleCtrls,
+						// toggle the main image and the content view (triggered after the animation ends)
+						onToggleContentComplete : toggleCompleteCtrls
+					}),
+		toggleSlideshow = function() {
+			slideshow.toggle();
+			toggleBtnn();
+		},
+		closeOverlay = function() {
+			classie.add( overlay, 'hide' );
+		};
+
+				// toggle between fullscreen and small slideshow
+				switchBtnn.addEventListener( 'click', toggleSlideshow );
+				// close overlay
+				overlayClose.addEventListener( 'click', closeOverlay );
+
+			}());
+</script>
+</body>
+</html>
